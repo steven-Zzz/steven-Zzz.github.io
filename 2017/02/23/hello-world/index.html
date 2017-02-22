@@ -97,7 +97,7 @@ Hexo了解Hexo&amp;emsp;&amp;emsp;说到搭自己的博客，第一个想到的�
 Hexo了解Hexo&amp;emsp;&amp;emsp;说到搭自己的博客，第一个想到的肯">
 <meta property="og:image" content="http://yoursite.com/images/hexo/github1.png">
 <meta property="og:image" content="http://yoursite.com/images/hexo/github2.png">
-<meta property="og:updated_time" content="2017-02-22T16:18:56.000Z">
+<meta property="og:updated_time" content="2017-02-22T16:22:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开博之篇">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;前几天晚上，突然想搭一下自己的博客，虽然以前刚刚入行的时候，就想搭了，但也只是想想而已，都忙着时间赚外块去了。&amp;emsp;&amp;emsp;最近刚刚过完年，比较闲，所以不能让自己闲下来，决定搭个博客，反正基本上所有东西都是免费的，好好利用开源的东西。&amp;emsp;&amp;emsp;话不多说，开始今天的发现之旅。
@@ -314,7 +314,7 @@ Hexo了解Hexo&amp;emsp;&amp;emsp;说到搭自己的博客，第一个想到的�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-23T00:18:56+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-23T00:22:26+08:00">
                 2017-02-23
               </time>
             
@@ -390,7 +390,7 @@ Hexo了解Hexo&amp;emsp;&amp;emsp;说到搭自己的博客，第一个想到的�
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo-cli    <span class="comment">#全局安装nexo</span></div><div class="line"><span class="built_in">cd</span> ~/dev/</div><div class="line">hexo init blog             <span class="comment">#处始化</span></div><div class="line"><span class="built_in">cd</span> blog</div><div class="line">npm install                <span class="comment">#安装依赖包，建议用cnpm，要不然时间有点长。</span></div></pre></td></tr></table></figure>
 <p>到这里，你就可以执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
 <p>然后应该有小伙伴问，这什么意思，我列举几个比较长用的命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo s      <span class="comment"># hexo server 启动本地服务，默认是4000</span></div><div class="line">hexo g      <span class="comment"># hexo generate 生成静态文件，存放在public目录下面</span></div><div class="line">hexo d      <span class="comment"># hexo deploy  将你的博客部署到远程服务上面</span></div><div class="line">hexo clean  <span class="comment"># 清除缓存文件</span></div></pre></td></tr></table></figure></p>
-<p><strong>注意的是</strong><br>    1.有的时候发到服务上会发现本地和服务上面内容不一样，这个时候先把public目录删除，也就是先把静态文件删除。<code>hexo clean</code> 然后再执行 hexo g -d</p>
+<p><strong>注意的是</strong><br>    1.有的时候发到服务上会发现本地和服务上面内容不一样，这个时候先把public目录删除，也就是先把静态文件删除。然后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">npm install</div><div class="line">hexo g -d</div></pre></td></tr></table></figure></p>
 <h3 id="模板选择"><a href="#模板选择" class="headerlink" title="模板选择"></a>模板选择</h3><p>刚刚开始选择模板的时候，网上看了很多，最后选择了 <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">next</a>，这个模板我看了那么多，还是挺喜欢这个的。<br><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">基本配置</a>，关于配置我就不写了，这里都有。</p>
 <h4 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h4><p>这边我用的<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>，也是很简单，虽然官网说只要两行代码，但并没有说放哪有。。。<br>具体操作：<br>1.在<code>themes/next/layout/_macro/post.swig</code>加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</div><div class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;阅读次数:&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;</div></pre></td></tr></table></figure></p>
 <p>2.在<code>themes/next/layout/_partials/footer.swig</code>加入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>

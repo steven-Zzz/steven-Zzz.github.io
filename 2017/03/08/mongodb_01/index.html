@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="vue," />
+  <meta name="keywords" content="mongodb," />
 
 
 
@@ -87,22 +87,22 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp; 这两天应项目需要，用了一下vue框架，虽然之前看过一点，那还是vue1.0的时候，也没看多少，这次正好机会，好好理一下。
-Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架，vue采用自底向上增量开发。并且只关注视图层。比较容易上手，比react要好上手很多。
-组件&amp;emsp;&amp;emsp;vue跟react类似都有组件的概念，任何页面都能抽象成很">
+<meta name="description" content="&amp;emsp;&amp;emsp;mongodb使用了很长时间了，把mongodb的常用查询总结一下。
+常用命令模糊搜索1TestDB.find(&amp;#123;&amp;apos;name&amp;apos;: &amp;#123;&amp;apos;$regex&amp;apos;: &amp;apos;abcd&amp;apos;, &amp;apos;$options&amp;apos;: &amp;apos;$i&amp;apos;&amp;#125;&amp;#125;)
+&amp;emsp;&amp;emsp; $">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue初学">
-<meta property="og:url" content="http://yoursite.com/2017/03/03/vue01/index.html">
+<meta property="og:title" content="mongodb之查询语法总结">
+<meta property="og:url" content="http://yoursite.com/2017/03/08/mongodb_01/index.html">
 <meta property="og:site_name" content="Steven Blog">
-<meta property="og:description" content="&amp;emsp;&amp;emsp; 这两天应项目需要，用了一下vue框架，虽然之前看过一点，那还是vue1.0的时候，也没看多少，这次正好机会，好好理一下。
-Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架，vue采用自底向上增量开发。并且只关注视图层。比较容易上手，比react要好上手很多。
-组件&amp;emsp;&amp;emsp;vue跟react类似都有组件的概念，任何页面都能抽象成很">
-<meta property="og:updated_time" content="2017-03-02T16:20:43.000Z">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;mongodb使用了很长时间了，把mongodb的常用查询总结一下。
+常用命令模糊搜索1TestDB.find(&amp;#123;&amp;apos;name&amp;apos;: &amp;#123;&amp;apos;$regex&amp;apos;: &amp;apos;abcd&amp;apos;, &amp;apos;$options&amp;apos;: &amp;apos;$i&amp;apos;&amp;#125;&amp;#125;)
+&amp;emsp;&amp;emsp; $">
+<meta property="og:updated_time" content="2017-03-08T09:33:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue初学">
-<meta name="twitter:description" content="&amp;emsp;&amp;emsp; 这两天应项目需要，用了一下vue框架，虽然之前看过一点，那还是vue1.0的时候，也没看多少，这次正好机会，好好理一下。
-Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架，vue采用自底向上增量开发。并且只关注视图层。比较容易上手，比react要好上手很多。
-组件&amp;emsp;&amp;emsp;vue跟react类似都有组件的概念，任何页面都能抽象成很">
+<meta name="twitter:title" content="mongodb之查询语法总结">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;mongodb使用了很长时间了，把mongodb的常用查询总结一下。
+常用命令模糊搜索1TestDB.find(&amp;#123;&amp;apos;name&amp;apos;: &amp;#123;&amp;apos;$regex&amp;apos;: &amp;apos;abcd&amp;apos;, &amp;apos;$options&amp;apos;: &amp;apos;$i&amp;apos;&amp;#125;&amp;#125;)
+&amp;emsp;&amp;emsp; $">
 
 
 
@@ -130,13 +130,13 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/03/vue01/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/08/mongodb_01/"/>
 
 
 
 
 
-  <title> vue初学 | Steven Blog </title>
+  <title> mongodb之查询语法总结 | Steven Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +275,7 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/03/vue01/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/08/mongodb_01/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Steven Qiang">
@@ -299,7 +299,7 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
             
             
               
-                vue初学
+                mongodb之查询语法总结
               
             
           </h1>
@@ -314,8 +314,8 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-03T00:20:43+08:00">
-                2017-03-03
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-08T17:33:23+08:00">
+                2017-03-08
               </time>
             
 
@@ -340,8 +340,8 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue/" itemprop="url" rel="index">
-                    <span itemprop="name">vue</span>
+                  <a href="/categories/mongodb/" itemprop="url" rel="index">
+                    <span itemprop="name">mongodb</span>
                   </a>
                 </span>
 
@@ -358,8 +358,8 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/03/vue01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/03/vue01/" itemprop="commentCount"></span>
+                <a href="/2017/03/08/mongodb_01/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/08/mongodb_01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -385,15 +385,32 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
       
 
       
-        <p>&emsp;&emsp; 这两天应项目需要，用了一下vue框架，虽然之前看过一点，那还是vue1.0的时候，也没看多少，这次正好机会，好好理一下。</p>
-<h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><h3 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h3><p>&emsp;&emsp; <a href="https://cn.vuejs.org/v2/guide/index.html" target="_blank" rel="external">vue</a>官网介绍vue是一个激进式框架，vue采用自底向上增量开发。并且只关注视图层。比较容易上手，比react要好上手很多。</p>
-<h4 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h4><p>&emsp;&emsp;vue跟react类似都有组件的概念，任何页面都能抽象成很多个组件组件，很方便代码理解和阅读。<br>&emsp;&emsp;在vue中，组件分为 <strong>局部注册</strong> 和 <strong>全局注册</strong>。</p>
-<h4 id="局部注册"><a href="#局部注册" class="headerlink" title="局部注册"></a>局部注册</h4><p>局部注册一般我是用在一个组件里面内部使用，而无法提取公共部分。一般前面用_来起头代表局部组件。如python里面的私有方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var _test = &#123;template: &apos;&lt;div&gt;this is a test&lt;/div&gt;&apos;&#125;</div><div class="line">new Vue(&#123;</div><div class="line">    &apos;el&apos;: &apos;#app&apos;,</div><div class="line">    data: &#123;&#125;,</div><div class="line">    component: &#123;</div><div class="line">            &apos;test&apos;: _test</div><div class="line">        &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-<p>如上所例，这样就可以把_test当成是整个大组件的局部组件。</p>
-<h4 id="全局注册"><a href="#全局注册" class="headerlink" title="全局注册"></a>全局注册</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Vue.component(&apos;todo&apos;,&#123;</div><div class="line">    &apos;template&apos;: &apos;&lt;div&gt;testtt&lt;/div&gt;&apos;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>这样就注册了一个全局组件，可以在任何地址使用，这个写法是用了语法糖。<br>还有一种写法就是借助于<strong>组件构造器</strong>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">// 创建一个组件构造器</div><div class="line">var test = Vue.extend(&#123;template: &apos;&lt;div&gt;testt&lt;/div&gt;&apos;&#125;);</div><div class="line">// 注册组件</div><div class="line">Vue.component(&apos;test&apos;: test)</div></pre></td></tr></table></figure></p>
-<p>当然组件最重要的部分就是组件之间的数据传递，<br>一般写法是，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Vue.component(&apos;test&apos;,</div><div class="line">&#123;&apos;data&apos;: &#123;&apos;a&apos;: b&#125;&#125;, </div><div class="line">&#123;&apos;template&apos;: &apos;&lt;div&gt;111&lt;/div&gt;&apos;&#125;</div><div class="line">)</div></pre></td></tr></table></figure></p>
-<p>这样写是会报错，官方理解是说 <strong>data 是一个函数，因此 Vue 不会警告，但是我们为每一个组件返回了同一个对象引用</strong><br>所以我们应该返回一个function<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var data = &#123;&apos;a&apos;: b&#125;</div><div class="line">Vue.component(&apos;test&apos;,</div><div class="line">&#123;&apos;data&apos;: function()&#123;return data&#125;&#125;, </div><div class="line">&#123;&apos;template&apos;: &apos;&lt;div&gt;111&lt;/div&gt;&apos;&#125;</div><div class="line">)</div></pre></td></tr></table></figure></p>
+        <p>&emsp;&emsp;mongodb使用了很长时间了，把mongodb的常用查询总结一下。</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="模糊搜索"><a href="#模糊搜索" class="headerlink" title="模糊搜索"></a>模糊搜索</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$regex&apos;: &apos;abcd&apos;, &apos;$options&apos;: &apos;$i&apos;&#125;&#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp; <code>$regex</code>就是正则搜索，<code>{&#39;$options&#39;: &#39;$i&#39;}</code>就是不区分大小写。</p>
+<h3 id="结果存在于list"><a href="#结果存在于list" class="headerlink" title="结果存在于list"></a>结果存在于list</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$in&apos;: [5, 6, 7, 8]&#125;&#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp; 上述例子就是判断TestDB里面的name字段存在于<code>[5,6,7,8]</code>。</p>
+<h3 id="结果不存在于list"><a href="#结果不存在于list" class="headerlink" title="结果不存在于list"></a>结果不存在于list</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$nin&apos;: [5, 6, 7, 8]&#125;&#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp; 上述例子就是判断TestDB里面的name字段不存在于<code>[5,6,7,8]</code>。</p>
+<h3 id="结果不存在于list-1"><a href="#结果不存在于list-1" class="headerlink" title="结果不存在于list"></a>结果不存在于list</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$nin&apos;: [5, 6, 7, 8]&#125;&#125;)</div></pre></td></tr></table></figure>
+<p>&emsp;&emsp; 上述例子就是判断TestDB里面的name字段不存在于<code>[5,6,7,8]</code>。</p>
+<h3 id="查询数组里面某个字段里面的值"><a href="#查询数组里面某个字段里面的值" class="headerlink" title="查询数组里面某个字段里面的值"></a>查询数组里面某个字段里面的值</h3><p>假设数据为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &apos;name&apos;: [</div><div class="line">             &#123;&apos;a&apos;: 1, &apos;b&apos;: 2&#125;,</div><div class="line">             &#123;&apos;a&apos;: 3, &apos;b&apos;: 4&#125;,</div><div class="line">             &#123;&apos;a&apos;: 5, &apos;b&apos;: 6&#125;</div><div class="line">            ]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$elemMatch&apos;: &#123;&apos;a&apos;:1, &apos;b&apos;: 2&#125;&#125;&#125;)</div></pre></td></tr></table></figure>
+<h3 id="比较操作符"><a href="#比较操作符" class="headerlink" title="比较操作符"></a>比较操作符</h3><ol>
+<li>“$gt”    =&gt;  “&gt;” </li>
+<li>“$gte”   =&gt;  “&gt;=”</li>
+<li>“$lt”    =&gt;  “&lt;”</li>
+<li>“$lte”   =&gt;  “&lt;=”</li>
+<li>“$ne”    =&gt;  “不相等”</li>
+</ol>
+<h3 id="查找list的长度"><a href="#查找list的长度" class="headerlink" title="查找list的长度"></a>查找list的长度</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&apos;name&apos;: [</div><div class="line">         &#123;&apos;a&apos;: 1, &apos;b&apos;: 2&#125;,</div><div class="line">         &#123;&apos;a&apos;: 3, &apos;b&apos;: 4&#125;,</div><div class="line">         &#123;&apos;a&apos;: 5, &apos;b&apos;: 6&#125;</div><div class="line">        ]</div></pre></td></tr></table></figure>
+<p>按照上述数据，想查找name的长度为3的数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name&apos;: &#123;&apos;$size&apos;: 3&#125;&#125;)</div></pre></td></tr></table></figure></p>
+<p>值的注意的是<code>$size</code>不能使用比较操作符。要不然是会报错的。</p>
+<h3 id="查找数据指定的位置的元素"><a href="#查找数据指定的位置的元素" class="headerlink" title="查找数据指定的位置的元素"></a>查找数据指定的位置的元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&apos;name&apos;: [5,7,8,9]</div></pre></td></tr></table></figure>
+<p>按照上述数据，我想要查找name[0]=5的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;name.0&apos;: 5&#125;)</div></pre></td></tr></table></figure>
+<h3 id="强大的操作符where"><a href="#强大的操作符where" class="headerlink" title="强大的操作符where"></a>强大的操作符where</h3><p>之前碰到一个想要查找，一个数组的个数大于3，这个时候不能用<code>$size</code>。然后可以这样写.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">TestDB.find(&#123;&apos;$where&apos;: &apos;this.name.length &gt; 3&apos;&#125;)</div></pre></td></tr></table></figure></p>
+<p>用法很简单，相当于javascript.</p>
 
       
     </div>
@@ -438,7 +455,7 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
       
         <div class="post-tags">
           
-            <a href="/tags/vue/" rel="tag"># vue</a>
+            <a href="/tags/mongodb/" rel="tag"># mongodb</a>
           
         </div>
       
@@ -451,8 +468,8 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/23/first_blog/" rel="next" title="开博之篇">
-                <i class="fa fa-chevron-left"></i> 开博之篇
+              <a href="/2017/03/08/react_native_icon/" rel="next" title="react-native之使用Icon">
+                <i class="fa fa-chevron-left"></i> react-native之使用Icon
               </a>
             
           </div>
@@ -460,10 +477,6 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/06/supervisor_web/" rel="prev" title="supervisor web页面设置">
-                supervisor web页面设置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -489,8 +502,8 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/03/vue01/"
-           data-title="vue初学" data-url="http://yoursite.com/2017/03/03/vue01/">
+      <div class="ds-thread" data-thread-key="2017/03/08/mongodb_01/"
+           data-title="mongodb之查询语法总结" data-url="http://yoursite.com/2017/03/08/mongodb_01/">
       </div>
     
   </div>
@@ -638,7 +651,7 @@ Vue基本知识&amp;emsp;&amp;emsp; vue官网介绍vue是一个激进式框架�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue"><span class="nav-number">1.</span> <span class="nav-text">Vue</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本知识"><span class="nav-number">1.1.</span> <span class="nav-text">基本知识</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#组件"><span class="nav-number">1.1.1.</span> <span class="nav-text">组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#局部注册"><span class="nav-number">1.1.2.</span> <span class="nav-text">局部注册</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全局注册"><span class="nav-number">1.1.3.</span> <span class="nav-text">全局注册</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#模糊搜索"><span class="nav-number">1.1.</span> <span class="nav-text">模糊搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果存在于list"><span class="nav-number">1.2.</span> <span class="nav-text">结果存在于list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果不存在于list"><span class="nav-number">1.3.</span> <span class="nav-text">结果不存在于list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果不存在于list-1"><span class="nav-number">1.4.</span> <span class="nav-text">结果不存在于list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询数组里面某个字段里面的值"><span class="nav-number">1.5.</span> <span class="nav-text">查询数组里面某个字段里面的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较操作符"><span class="nav-number">1.6.</span> <span class="nav-text">比较操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找list的长度"><span class="nav-number">1.7.</span> <span class="nav-text">查找list的长度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找数据指定的位置的元素"><span class="nav-number">1.8.</span> <span class="nav-text">查找数据指定的位置的元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强大的操作符where"><span class="nav-number">1.9.</span> <span class="nav-text">强大的操作符where</span></a></li></ol></li></ol></div>
             
 
           </div>

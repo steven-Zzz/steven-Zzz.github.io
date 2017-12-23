@@ -73,7 +73,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="fetch," />
 
 
 
@@ -89,17 +89,21 @@
 
 
 
-<meta name="description" content="google-site-verification: googlea6b88e098235b330.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Steven Blog">
-<meta property="og:url" content="http://stevenqiang.xin/googlea6b88e098235b330.html">
+<meta name="description" content="带同域名的cookie&amp;emsp;&amp;emsp;今天在使用fetch的时候，发现没有把cookie带过去。后来查找了一下，需要在选项里面加入&amp;#39;credentials&amp;#39;: &amp;#39;same-origin&amp;#39;如: fetch使用post的时候数据传不过去要在header里面加入 &amp;#39;Content-Type&amp;#39;: &amp;#39;application/json&amp;#39;">
+<meta name="keywords" content="fetch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用fetch时发送当前域cookie">
+<meta property="og:url" content="http://stevenqiang.xin/2017/03/21/fetch_cookie/index.html">
 <meta property="og:site_name" content="Steven Blog">
-<meta property="og:description" content="google-site-verification: googlea6b88e098235b330.html">
+<meta property="og:description" content="带同域名的cookie&amp;emsp;&amp;emsp;今天在使用fetch的时候，发现没有把cookie带过去。后来查找了一下，需要在选项里面加入&amp;#39;credentials&amp;#39;: &amp;#39;same-origin&amp;#39;如: fetch使用post的时候数据传不过去要在header里面加入 &amp;#39;Content-Type&amp;#39;: &amp;#39;application/json&amp;#39;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-21T01:41:04.000Z">
+<meta property="og:image" content="http://stevenqiang.xin/images/fetch/fetch.png">
+<meta property="og:image" content="http://stevenqiang.xin/images/fetch/fetch2.png">
+<meta property="og:updated_time" content="2017-03-21T12:41:46.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Steven Blog">
-<meta name="twitter:description" content="google-site-verification: googlea6b88e098235b330.html">
+<meta name="twitter:title" content="使用fetch时发送当前域cookie">
+<meta name="twitter:description" content="带同域名的cookie&amp;emsp;&amp;emsp;今天在使用fetch的时候，发现没有把cookie带过去。后来查找了一下，需要在选项里面加入&amp;#39;credentials&amp;#39;: &amp;#39;same-origin&amp;#39;如: fetch使用post的时候数据传不过去要在header里面加入 &amp;#39;Content-Type&amp;#39;: &amp;#39;application/json&amp;#39;">
+<meta name="twitter:image" content="http://stevenqiang.xin/images/fetch/fetch.png">
 
 
 
@@ -127,19 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://stevenqiang.xin/googlea6b88e098235b330.html"/>
+  <link rel="canonical" href="http://stevenqiang.xin/2017/03/21/fetch_cookie/"/>
 
 
 
 
 
-  <title>
-  
-
-  
-     | Steven Blog
-  
-</title>
+  <title> 使用fetch时发送当前域cookie | Steven Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -164,7 +162,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -269,18 +267,212 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
 
-	<h1 class="post-title" itemprop="name headline"></h1>
+  
 
+  
+  
+  
 
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://stevenqiang.xin/2017/03/21/fetch_cookie/">
 
-</header>
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Steven Qiang">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Steven Blog">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Steven Blog" src="">
+    </span>
+  </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                使用fetch时发送当前域cookie
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-21T20:41:46+08:00">
+                2017-03-21
+              </time>
+            
+
+            
+
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_container_site_pv">阅读次数:<span id="busuanzi_value_site_pv">
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/fetch/" itemprop="url" rel="index">
+                    <span itemprop="name">fetch</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/21/fetch_cookie/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/21/fetch_cookie/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
     
-      google-site-verification: googlea6b88e098235b330.html
-    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="带同域名的cookie"><a href="#带同域名的cookie" class="headerlink" title="带同域名的cookie"></a>带同域名的cookie</h2><p>&emsp;&emsp;今天在使用fetch的时候，发现没有把cookie带过去。<br>后来查找了一下，需要在选项里面加入<code>&#39;credentials&#39;: &#39;same-origin&#39;</code><br>如:<br><img src="/images/fetch/fetch.png" alt=""></p>
+<h2 id="fetch使用post的时候数据传不过去"><a href="#fetch使用post的时候数据传不过去" class="headerlink" title="fetch使用post的时候数据传不过去"></a>fetch使用post的时候数据传不过去</h2><p>要在header里面加入 <code>&#39;Content-Type&#39;: &#39;application/json&#39;</code><br><img src="/images/fetch/fetch2.png" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-image/WechatIMG1.jpeg" alt="Steven Qiang WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-image/WechatIMG4.jpeg" alt="Steven Qiang Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/fetch/" rel="tag"># fetch</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/08/mongodb_01/" rel="next" title="mongodb之查询语法总结">
+                <i class="fa fa-chevron-left"></i> mongodb之查询语法总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/20/bashAndZsh/" rel="prev" title="zsh使用环境变量">
+                zsh使用环境变量 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -291,8 +483,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="googlea6b88e098235b330.html"
-           data-title="" data-url="http://stevenqiang.xin/googlea6b88e098235b330.html">
+      <div class="ds-thread" data-thread-key="2017/03/21/fetch_cookie/"
+           data-title="使用fetch时发送当前域cookie" data-url="http://stevenqiang.xin/2017/03/21/fetch_cookie/">
       </div>
     
   </div>
@@ -316,8 +508,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -421,6 +622,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#带同域名的cookie"><span class="nav-number">1.</span> <span class="nav-text">带同域名的cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fetch使用post的时候数据传不过去"><span class="nav-number">2.</span> <span class="nav-text">fetch使用post的时候数据传不过去</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -534,6 +751,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

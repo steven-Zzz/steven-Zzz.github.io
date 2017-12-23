@@ -360,7 +360,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/04/20/bashAndZsh/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/04/20/bashAndZsh/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/04/20/bashAndZsh/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -522,7 +522,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/21/fetch_cookie/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/21/fetch_cookie/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/21/fetch_cookie/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -685,7 +685,7 @@ fetch使用post的时候数据传不过去要在header里面加入 &
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/08/mongodb_01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/08/mongodb_01/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/08/mongodb_01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -848,7 +848,7 @@ fetch使用post的时候数据传不过去要在header里面加入 &
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/08/react_native_icon/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/08/react_native_icon/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/08/react_native_icon/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1012,7 +1012,7 @@ fetch使用post的时候数据传不过去要在header里面加入 &
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/07/react_native01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/react_native01/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/07/react_native01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1177,7 +1177,7 @@ fetch使用post的时候数据传不过去要在header里面加入 &
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/06/supervisor_web/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/supervisor_web/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/06/supervisor_web/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1340,7 +1340,7 @@ fetch使用post的时候数据传不过去要在header里面加入 &
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/03/03/vue01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/03/vue01/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/03/03/vue01/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1503,7 +1503,7 @@ Vue基本知识&emsp;&emsp; vue官网介绍vue是一个激进式框架，vue采�
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2017/02/23/first_blog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/23/first_blog/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/23/first_blog/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1826,32 +1826,31 @@ Vue基本知识&emsp;&emsp; vue官网介绍vue是一个激进式框架，vue采�
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"stevenqiang"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'stevengao';
+      var disqus_identifier = 'index.html';
+
+      var disqus_title = "";
+
+
+      function run_disqus_script(disqus_script) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+
+      
+
+    </script>
   
-
-
-
 
 
 

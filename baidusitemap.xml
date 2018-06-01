@@ -3,130 +3,9 @@
 
 
     
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/04/20/bashAndZsh/</loc>
-    <lastmod>2017-04-20T10:39:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>zsh使用环境变量</title>
-        <pubTime>2017-04-20T10:39:34.000Z</pubTime>
-        
-        <tag>zsh</tag>
-         
-         
-           
-             
-              <breadCrumb title="zsh" url="http://stevenqiang.xin/categories/zsh/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/03/21/fetch_cookie/</loc>
-    <lastmod>2017-03-21T12:41:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>使用fetch时发送当前域cookie</title>
-        <pubTime>2017-03-21T12:41:46.000Z</pubTime>
-        
-        <tag>fetch</tag>
-         
-         
-           
-             
-              <breadCrumb title="fetch" url="http://stevenqiang.xin/categories/fetch/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/03/08/mongodb_01/</loc>
-    <lastmod>2017-03-08T09:33:23.000Z</lastmod>
-    <data>
-        <display>
-        <title>mongodb之查询语法总结</title>
-        <pubTime>2017-03-08T09:33:23.000Z</pubTime>
-        
-        <tag>mongodb</tag>
-         
-         
-           
-             
-              <breadCrumb title="mongodb" url="http://stevenqiang.xin/categories/mongodb/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/03/08/react_native_icon/</loc>
-    <lastmod>2017-03-07T16:06:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>react-native之使用Icon</title>
-        <pubTime>2017-03-07T16:06:49.000Z</pubTime>
-        
-        <tag>react-native</tag>
-         
-         
-           
-             
-              <breadCrumb title="react-native" url="http://stevenqiang.xin/categories/react-native/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/03/07/react_native01/</loc>
-    <lastmod>2017-03-07T08:56:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>react-native之ios模拟器cmd+R不起作用</title>
-        <pubTime>2017-03-07T08:56:54.000Z</pubTime>
-        
-        <tag>react-native</tag>
-         
-         
-           
-             
-              <breadCrumb title="react-native" url="http://stevenqiang.xin/categories/react-native/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://stevenqiang.xin/2017/03/06/supervisor_web/</loc>
-    <lastmod>2017-03-06T03:43:32.000Z</lastmod>
-    <data>
-        <display>
-        <title>supervisor web页面设置</title>
-        <pubTime>2017-03-06T03:43:32.000Z</pubTime>
-        
-        <tag>supervisor</tag>
-         
-         
-           
-             
-              <breadCrumb title="supervisor" url="http://stevenqiang.xin/categories/supervisor/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
   <url>
     <loc>http://stevenqiang.xin/2017/03/03/vue01/</loc>
-    <lastmod>2017-03-02T16:20:43.000Z</lastmod>
+    <lastmod>2018-06-01T04:26:57.000Z</lastmod>
     <data>
         <display>
         <title>vue初学</title>
@@ -136,9 +15,57 @@
          
          
            
-             
-              <breadCrumb title="vue" url="http://stevenqiang.xin/categories/vue/"/>
-          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/03/06/supervisor_web/</loc>
+    <lastmod>2018-06-01T04:26:52.000Z</lastmod>
+    <data>
+        <display>
+        <title>supervisor web页面设置</title>
+        <pubTime>2017-03-06T03:43:32.000Z</pubTime>
+        
+        <tag>supervisor</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/03/08/react_native_icon/</loc>
+    <lastmod>2018-06-01T04:26:46.000Z</lastmod>
+    <data>
+        <display>
+        <title>react-native之使用Icon</title>
+        <pubTime>2017-03-07T16:06:49.000Z</pubTime>
+        
+        <tag>react-native</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/03/08/mongodb_01/</loc>
+    <lastmod>2018-06-01T04:26:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>mongodb之查询语法总结</title>
+        <pubTime>2017-03-08T09:33:23.000Z</pubTime>
+        
+        <tag>mongodb</tag>
+         
+         
+           
         </display>
     </data>
     </url>
@@ -146,7 +73,7 @@
     
   <url>
     <loc>http://stevenqiang.xin/2017/02/23/first_blog/</loc>
-    <lastmod>2017-02-22T16:27:37.000Z</lastmod>
+    <lastmod>2018-06-01T04:26:24.000Z</lastmod>
     <data>
         <display>
         <title>开博之篇</title>
@@ -156,13 +83,62 @@
          
          
            
-             
-              <breadCrumb title="Hexo" url="http://stevenqiang.xin/categories/Hexo/"/>
-          
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/03/07/react_native01/</loc>
+    <lastmod>2018-06-01T04:01:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>react-native之ios模拟器cmd+R不起作用</title>
+        <pubTime>2017-03-07T08:56:54.000Z</pubTime>
+        
+        <tag>react-native</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/03/21/fetch_cookie/</loc>
+    <lastmod>2018-06-01T04:01:23.000Z</lastmod>
+    <data>
+        <display>
+        <title>使用fetch时发送当前域cookie</title>
+        <pubTime>2017-03-21T12:41:46.000Z</pubTime>
+        
+        <tag>fetch</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://stevenqiang.xin/2017/04/20/bashAndZsh/</loc>
+    <lastmod>2018-06-01T04:01:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>zsh使用环境变量</title>
+        <pubTime>2017-04-20T10:39:34.000Z</pubTime>
+        
+        <tag>zsh</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
     

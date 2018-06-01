@@ -17,7 +17,7 @@
 <meta property="og:description" content="&amp;emsp;&amp;emsp;想了解学习一下连接池。 背景每次用户请求数据库，去建立一次连接，都是非常耗时的一件事件，有的时候甚至比sql的时间还要长。而且如果同时有很多用户建立连接，很容易造成db的宕机，内存溢出等现象，而且极大的占用系统性能，对网站的访问速度，用户体验都有很大的影响。 针对于这种现象，后来就有一种概念叫连接池。 在原来DAO(Data Access Object)与DB之间加了一层连">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://stevenqiang.xin/images/connection_pool/1.png">
-<meta property="og:updated_time" content="2018-06-01T09:30:42.000Z">
+<meta property="og:updated_time" content="2018-06-01T09:34:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="连接池的介绍">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;想了解学习一下连接池。 背景每次用户请求数据库，去建立一次连接，都是非常耗时的一件事件，有的时候甚至比sql的时间还要长。而且如果同时有很多用户建立连接，很容易造成db的宕机，内存溢出等现象，而且极大的占用系统性能，对网站的访问速度，用户体验都有很大的影响。 针对于这种现象，后来就有一种概念叫连接池。 在原来DAO(Data Access Object)与DB之间加了一层连">
@@ -170,6 +170,7 @@
 <p>针对于这种现象，后来就有一种概念叫<code>连接池</code>。</p>
 <p>在原来DAO(Data Access Object)与DB之间加了一层连接池。</p>
 <p>有了<code>连接池</code>之后，可以减少内存的使用率，提高了数据库连接的利用率。<br><img src="/images/connection_pool/1.png" alt=""><br>上图就是连接池目前的一个位置，用户请求过来，通过数据库客户端，数据库客户端通过调用连接池去调用DB。</p>
+<a id="more"></a>
 <h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><ol>
 <li>最小连接数：数据库的连接数据不能低于某个值。</li>
 <li>最大连接数：整个连接池所能创建的最多的数据库连接数量。</li>
@@ -421,11 +422,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">zsh</a>
+                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -433,15 +434,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">zsh</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">supervisor</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
             
             <div class="clearfix"></div>

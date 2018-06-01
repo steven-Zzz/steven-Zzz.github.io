@@ -168,27 +168,9 @@
 <p>针对于这种现象，后来就有一种概念叫<code>连接池</code>。</p>
 <p>在原来DAO(Data Access Object)与DB之间加了一层连接池。</p>
 <p>有了<code>连接池</code>之后，可以减少内存的使用率，提高了数据库连接的利用率。<br><img src="/images/connection_pool/1.png" alt=""><br>上图就是连接池目前的一个位置，用户请求过来，通过数据库客户端，数据库客户端通过调用连接池去调用DB。</p>
-<h2 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h2><ol>
-<li>最小连接数：数据库的连接数据不能低于某个值。</li>
-<li>最大连接数：整个连接池所能创建的最多的数据库连接数量。</li>
-<li>连接增加数：应用每次打开新连接的个数。</li>
-</ol>
-<h2 id="如何设计"><a href="#如何设计" class="headerlink" title="如何设计"></a>如何设计</h2><p>相当于一个缓冲池，预先打开N个数据库连接放到缓冲池里面，当需要数据库连接的时候，就从缓冲池里面去取一个，使用完了之后，在还回去，如果超过最大的连接数据，就只有等待，或者可以设计一个自动扩容的连接池。<br>所以可能会存在一些问题：</p>
-<ol>
-<li>并发的问题，同时可能会有多个请求进来。</li>
-<li>事务的处理必须要原子性，都要1对1，每个连接都要上锁，同一时间只有一个连接对应一个事务。</li>
-<li>连接池的合理分配与释放。</li>
-</ol>
-<h2 id="如何确定大小"><a href="#如何确定大小" class="headerlink" title="如何确定大小"></a>如何确定大小</h2><p>连接池的数量一般是根据机器的性能及并发量来决定的。<br>postgresql有提供一个公式，连接数 = (核心数 * 2) + 有效硬盘数，一般连接数10的话，就可以轻松搞定3000左右的用户，如果连接池设的比较多，但用不到的话，也是一种浪费，而且对性能也会有所影响。</p>
-<h2 id="预想中的连接池具有的功能"><a href="#预想中的连接池具有的功能" class="headerlink" title="预想中的连接池具有的功能"></a>预想中的连接池具有的功能</h2><ol>
-<li>通过对不同的数据库客户端或请求，去访问不一样的数据库，以达到最优的性能。</li>
-<li>通过对用户发来的请求来做到读写分离。</li>
-<li>并且可以把cache那一层加到连接池的上面。</li>
-<li>通过连接池来做db的监测，通过性能，数据。</li>
-<li>可以分类，短事务的连接池，长事务的连接池。</li>
-<li>动态的去增加扩容连接数。</li>
-</ol>
-
+        
+          <a class="article-more-a" href="/2018/06/01/connection_pool/#more">more >></a>
+        
       
 
       
@@ -960,11 +942,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">zsh</a>
+                <a href="javascript:void(0)" class="js-tag color3">react-native</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -972,15 +954,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">zsh</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">supervisor</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
             
             <div class="clearfix"></div>
